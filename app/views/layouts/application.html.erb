@@ -11,7 +11,41 @@
   </head>
 
   <body>
-    <%= link_to 'Users', users_path %>
-    <%= yield %>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <%= link_to root_path, class: 'navbar-brand' do %>
+        <%= fa_icon "film" %>
+        <span>Telecastube</span>
+      <% end %>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <%= form_with(url: videos_path, class: "form-inline ml-auto", method: :get) do |form| %>
+          <%= form.text_field :query, class: "form-control mr-sm-2" %>
+          <%= button_tag( class: "btn btn-outline-primary my-2 my-sm-0") do %>
+            <%= fa_icon "search" %>
+          <% end %>
+
+        <% end %>
+
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <%= link_to users_path, class: 'nav-link' do %>
+              <%= fa_icon 'th' %>
+            <% end %>
+          </li>
+          <li class="nav-item">
+            <%= link_to '#', class: 'nav-link' do %>
+              <%= fa_icon 'bell' %>
+            <% end %>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <%= link_to 'Videos', videos_path %>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>
