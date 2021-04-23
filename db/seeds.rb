@@ -7,10 +7,10 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-knopfler = User.create!(email: 'knopfler@example.com', password: 'asdasd', profile_picture: 'https://yt3.ggpht.com/ytc/AAUvwnjLVYG5ADfYn6tdPRmyFboIkCOaP-mB1_uTEEeyOA=s88-c-k-c0x00ffffff-no-rj', name: 'Mark Knopfler')
-brian_johnson = User.create!(email: 'brian_johnson@example.com', password: 'asdasd', profile_picture: 'https://yt3.ggpht.com/ytc/AAUvwnhAx16NEO8d8u8RAn7G6AsnttUctBOPn3MZ6gGa=s68-c-k-c0x00ffffff-no-rj', name: 'Brian Johnson TV')
-sean_roche = User.create!(email: 'sean_roche@example.com', password: 'asdasd', profile_picture: 'https://yt3.ggpht.com/ytc/AAUvwniSb8S0EJYYg9dPKQE9BOGKY4NU2OqCU-O6mNYC7g=s68-c-k-c0x00ffffff-no-rj', name: 'Sean Roche')
-poupystar_is_back = User.create!(email: 'poupystar_is_back@example.com', password: 'asdasd', profile_picture: 'https://yt3.ggpht.com/ytc/AAUvwnjTtIvCVK9oQbJBTK0lFd7y2wpbipuvBuu8SA=s68-c-k-c0x00ffffff-no-rj', name: 'Poupystar is back')
+knopfler = User.create!(profile_picture: 'https://yt3.ggpht.com/ytc/AAUvwnjLVYG5ADfYn6tdPRmyFboIkCOaP-mB1_uTEEeyOA=s88-c-k-c0x00ffffff-no-rj', name: 'Mark Knopfler')
+brian_johnson = User.create!(profile_picture: 'https://yt3.ggpht.com/ytc/AAUvwnhAx16NEO8d8u8RAn7G6AsnttUctBOPn3MZ6gGa=s68-c-k-c0x00ffffff-no-rj', name: 'Brian Johnson TV')
+sean_roche = User.create!(profile_picture: 'https://yt3.ggpht.com/ytc/AAUvwniSb8S0EJYYg9dPKQE9BOGKY4NU2OqCU-O6mNYC7g=s68-c-k-c0x00ffffff-no-rj', name: 'Sean Roche')
+poupystar_is_back = User.create!(profile_picture: 'https://yt3.ggpht.com/ytc/AAUvwnjTtIvCVK9oQbJBTK0lFd7y2wpbipuvBuu8SA=s68-c-k-c0x00ffffff-no-rj', name: 'Poupystar is back')
 
 Video.create!(
   title: "Matchstick Man",
