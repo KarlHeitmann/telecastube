@@ -1,10 +1,12 @@
 <div class="d-flex">
   <%= image_tag video.url %>
-  <%= video.title %>
-  <%= video.views %>
-  <%= video.description %>
-  <%= video.user_id %>
-  <%= link_to 'Show', video %>
-  <%= link_to 'Edit', edit_video_path(video) %>
-  <%= link_to 'Destroy', video, method: :delete, data: { confirm: 'Are you sure?' } %>
+  <div class="d-flex flex-column">
+    <p><%= video.title %></p>
+    <p><%= video.views %></p>
+    <div class="d-flex">
+      <%= image_tag video.user.profile_picture %>
+      <p><%= video.user.name %></p>
+    </div>
+    <p><%= video.description %></p>
+  </div>
 </div>
