@@ -1,12 +1,12 @@
-<div class="d-flex">
+<div class="d-flex my-2">
   <%= image_tag video.url %>
   <div class="d-flex flex-column">
-    <p><%= video.title %></p>
-    <p><%= video.views %></p>
-    <div class="d-flex">
-      <%= image_tag video.user.profile_picture %>
+    <h6><%= video.title %></h6>
+    <small><%= video.views %></small>
+    <div class="d-flex align-items-center">
+      <%= image_tag video.user.profile_picture, class: 'rounded-circle mr-2', size: '64x64' %>
       <p><%= video.user.name %></p>
     </div>
-    <p><%= video.description %></p>
+    <small><%= video.description %></small>
   </div>
 </div>
