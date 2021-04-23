@@ -1,10 +1,10 @@
-<tr>
-  <td><%= video.url %></td>
-  <td><%= video.title %></td>
-  <td><%= video.views %></td>
-  <td><%= video.description %></td>
-  <td><%= video.user_id %></td>
-  <td><%= link_to 'Show', video %></td>
-  <td><%= link_to 'Edit', edit_video_path(video) %></td>
-  <td><%= link_to 'Destroy', video, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-</tr>
+<div class="d-flex">
+  <%= image_tag video.url %>
+  <%= video.title %>
+  <%= video.views %>
+  <%= video.description %>
+  <%= video.user_id %>
+  <%= link_to 'Show', video %>
+  <%= link_to 'Edit', edit_video_path(video) %>
+  <%= link_to 'Destroy', video, method: :delete, data: { confirm: 'Are you sure?' } %>
+</div>
